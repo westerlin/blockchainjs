@@ -1,0 +1,51 @@
+.grow { transition: all .30s ease-in-out; }
+.grow:hover { transform: scale(2.0);
+				  color:#3A3;
+}
+
+.moustace {
+	position:absolute;
+	height:50px;
+	width:50px;
+	border-radius: 50%;
+	--mycolor:red;
+	color:var(--mycolor);
+	box-shadow: 
+		200px 100px 0 0 currentcolor, 
+		225px 100px 0 0 currentcolor; 
+}
+
+.moustace:before {
+	position:absolute;
+	height:100px;
+	width:200px;
+	content:"";
+	left:25px;
+	border-bottom: solid 50px currentcolor;
+	border-radius: 0 0 0 100%;
+	transform-origin: 200px 125px;
+	transform: rotate(-25deg);
+}
+
+.moustace:after {
+	position:absolute;
+	height:100px;
+	width:200px;
+	content:"";
+	left:250px;
+	border-bottom: solid 50px currentcolor;
+	border-radius: 0 0 100% 0;
+	transform-origin: 0px 125px;
+	transform: rotate(25deg);
+}
+
+.holder{
+	position:absolute;
+	top:200px;
+	left:200px;
+}
+
+.material-icons {
+  font-size: 50px;
+  color:#AFA;
+}
